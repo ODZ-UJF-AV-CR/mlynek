@@ -9,10 +9,10 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 
 #port = '/dev/ttyACM0'
-port = '/dev/ttyUSB0'
+port = '/dev/ttyUSB1'
 
 #baud = 115200
-baud = 9600
+baud = 2400
 ser = serial.Serial(port, baud, timeout=1)
 
 logger = logging.getLogger(__name__)
